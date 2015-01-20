@@ -11,7 +11,9 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
+    'language' => 'zh-CN',
     'modules' => [],
+    'layout' => 'column2',
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',

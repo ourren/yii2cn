@@ -64,4 +64,8 @@ tests                    contains various tests for the advanced application
 
 	./yii migrate
 
+## other library
+
+1. "kartik-v/yii2-widget-sidenav": "*"
+
  

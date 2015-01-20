@@ -28,6 +28,13 @@ class PasswordResetRequestForm extends Model
         ];
     }
 
+    public function attributeLabels()
+    {
+        return [
+            'email' => '邮箱',
+        ];
+    }
+
     /**
      * Sends an email with a link, for resetting the password.
      *
@@ -47,10 +54,11 @@ class PasswordResetRequestForm extends Model
             }
 
             if ($user->save()) {
+
                 return \Yii::$app->mailer->compose(['html' => 'passwordResetToken-html', 'text' => 'passwordResetToken-text'], ['user' => $user])
-                    ->setFrom([\Yii::$app->params['supportEmail'] => \Yii::$app->name . ' robot'])
+                     ->setFrom([\Yii::$app->params['supportEmail'] => \Yii::$app->name . ' robot'])
                     ->setTo($this->email)
-                    ->setSubject('Password reset for ' . \Yii::$app->name)
+                    ->setSubject('重置密码 ' . \Yii::$app->name)
                     ->send();
             }
         }
