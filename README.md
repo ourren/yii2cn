@@ -4,10 +4,10 @@ yii2cn is based on the yii2 advanced application, but add some basic functions f
 
 ## todo
 
-1. Chinese UI and setting (frontend and backend);
+1. <s>Chinese UI and setting (frontend and backend)</s>;
 2. user could login with weibo/qq;
-3. send email and need to activate after register
-4. reset password by send email link;
+3. send email and need to activate after register;
+4. <s>reset password by send email link</s>;
 5. .... 
 
 ## directory
@@ -63,6 +63,13 @@ tests                    contains various tests for the advanced application
 4)import your the init sql;
 
 	./yii migrate
+
+## Screen
+
+ ![image](https://github.com/ourren/yii2cn/raw/master/screen/frontend-1.png)
+ 
+ ![image](https://github.com/ourren/yii2cn/raw/master/screen/backend-1.png)
+
 
 ## other library
 
